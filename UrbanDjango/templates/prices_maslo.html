@@ -7,10 +7,9 @@
 <body>
     <h2>Цены на сыродавленное масло MasloDzen:</h2>
     <ul>
-        <li>Подсолнечное масло (250 мл.) - 280 руб.  <button>купить</button></li>
-        <li>Льняное масло (250 мл.) - 310 руб.  <button>купить</button></li>
-        <li>Масло грецкого ореха (250 мл.) - 750 руб.  <button>купить</button></li>
-        <li>Масло конопляного семени (250 мл.) - 950 руб.  <button>купить</button></li>
+        {% for i in pr %}
+            <li> {{ i }}  <button>купить</button></li>
+        {% endfor %}
     </ul>
     <p><a href="/maslo/"><button>Вернуться обратно</button></a></p>
 </body>
